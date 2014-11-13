@@ -29,6 +29,8 @@ namespace Algorithm4thEdition.ChapterOne
 				else
 				{
 					PrintFileSystemItem(entry, indentLevel);
+
+					// DO NOT pass ++indentLevel as param, this will change value in current level
 					PrintDirectoryTree((DirectoryInfo)entry, indentLevel + 1);
 				}
 			}
